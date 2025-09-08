@@ -59,18 +59,19 @@ export default function About() {
           </header>
 
           <p className="font-mono text-base sm:text-sm md:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed ">
-            I am a passionate and motivated second-year student seeking a
-            frontend development internship. I have a solid foundation in HTML,
-            CSS, and JavaScript, along with basic knowledge of both Vue.js and
-            React.js. Seeking an internship to apply my technical skills and
-            academic knowledge. I am disciplined, detail-oriented, and eager to
-            learn from experienced colleagues to grow as a professional
-            developer.
-            <br />
-            My goal is to become a skilled Frontend Developer within the next
-            year. I always try to acquire and update knowledge for
-            self-development, with further learning toward Full-stack
-            development.
+            As a passionate and motivated final-year student with a growing
+            foundation in web development, I’m seeking a frontend development
+            internship where I can apply technical skills I have learned,
+            combined with my real-world experience. I’m a disciplined and
+            responsible person with strong attention to detail and a positive
+            attitude toward learning from colleagues in the workplace who can
+            guide and support me to grow and prepare for my future as a
+            professional developer. 
+            <br /><br />
+            My primary goal is to become a skilled
+            Frontend Developer within the next year. I always try to acquire and
+            update knowledge for self-development, with further learning toward
+            full-stack development.
           </p>
 
           <footer>

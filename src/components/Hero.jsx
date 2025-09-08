@@ -10,7 +10,7 @@ export default function Hero() {
         className="flex flex-col md:flex-row items-center justify-center w-full px-4 md:px-52 pb-4 md:pb-24 md:pt-32 pt-24 mt-14 md:mt-0 z-10"
       >
         <section
-          className="flex-1 mr-28 md:text-left mt-10 md:mt-0 relative"
+          className="flex-1 md:text-left mt-10 md:mt-0 relative"
           data-aos="fade-up"
           data-aos-delay="500"
         >
@@ -21,7 +21,7 @@ export default function Hero() {
             </h1>
             <h2 className="text-xl sm:text-4xl md:text-2xl font-bold text-[#3e0f4a] md:text-[#c744ec] mb-2">
               <Typewriter
-                words={["Intern Frontend Developer"]}
+                words={["Frontend Developer Intern"]}
                 loop={0} // 0 = loop vô hạn
                 cursor
                 cursorStyle="|"
@@ -32,11 +32,10 @@ export default function Hero() {
             </h2>
           </header>
           <p className="font-mono text-base sm:text-lg md:text-lg text-gray-200 mb-6">
-            I’m a passionate frontend development student with a basic
-            foundation in HTML, CSS, and JavaScript, along with introductory
-            knowledge of Vue.js and React.js. I’m eager to improve my skills and
-            grow into a professional developer through continuous learning and
-            real-world practice.
+            Final-year student passionate about web development, seeking a
+            frontend internship to apply skills and grow. Eager to learn,
+            improve continuously, and become a skilled Frontend Developer with a
+            view toward <br />full-stack development.
           </p>
           <div className="flex items-center space-x-4 mb-6">
             <a href="#">
@@ -70,7 +69,7 @@ export default function Hero() {
           </div>
 
           <a
-            href="https://drive.google.com/uc?export=download&id=1v6r-A0I4Az96Km1kF5Igg3fu4R3W6_jJ"
+            href="https://drive.google.com/file/d/1rgDFhfq9wZRuhyYzMArTTqdNAqELMenC/view?usp=sharing"
             download
           >
             <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg">

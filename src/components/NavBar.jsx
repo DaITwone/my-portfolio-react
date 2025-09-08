@@ -1,14 +1,10 @@
-
 import { useState } from "react";
-import { FiMenu, FiX} from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
-   const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const scrollToContact = () =>
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+
   const [isOpen, setIsOpen] = useState(false);
 
   const NavbarLinks = [
@@ -26,7 +22,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between p-5">
         {/* LOGO */}
-        <a href="#home" className="text-4xl font-bold italic text-white">
+        <a href="#home" className="text-4xl font-bold italic">
           Portfolio
         </a>
 
@@ -35,7 +31,7 @@ export default function Navbar() {
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <FiMenu className="w-8 h-8 text-white" />
+          <FiMenu className="w-8 h-8" />
         </button>
 
         {/* Desktop Navigation */}
@@ -44,16 +40,16 @@ export default function Navbar() {
             <a
               key={link.id}
               href={link.link}
-              className="hover:text-gray-200 text-lg"
+              className="text-lg text-white transition duration-300 hover:scale-110 hover:text-purple-400 hover:font-extrabold"
             >
               {link.name}
             </a>
           ))}
-          <button 
-          onClick={scrollToContact}
-          className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:ng-purple-800 rounded-full text-lg">
-            {" "}
-            Contact{" "}
+          <button
+            onClick={scrollToContact}
+            className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"
+          >
+            Contact
           </button>
         </nav>
       </div>
@@ -68,7 +64,9 @@ export default function Navbar() {
         <button
           className="absolute top-5 right-5 text-white"
           onClick={() => setIsOpen(false)}
-        ><FiX className="w-8 h-8"/></button>
+        >
+          <FiX className="w-8 h-8" />
+        </button>
         {/*Mobile Navigation*/}
         {NavbarLinks.map((link) => (
           <a
@@ -80,8 +78,10 @@ export default function Navbar() {
             {link.name}
           </a>
         ))}
-      {/*Contact button*/}
-      <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"></button>
+        {/*Contact button*/}
+        <button className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg">
+          Contact
+        </button>
       </div>
     </header>
   );
