@@ -40,14 +40,14 @@ export default function Navbar() {
             <a
               key={link.id}
               href={link.link}
-              className="text-lg text-white transition duration-300 hover:scale-110 hover:text-purple-400 hover:font-extrabold"
+              className="text-lg transition duration-300 hover:scale-110 hover:text-purple-400 hover:font-extrabold"
             >
               {link.name}
             </a>
           ))}
           <button
             onClick={scrollToContact}
-            className="inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"
+            className="inline-flex border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg"
           >
             Contact
           </button>
@@ -62,7 +62,7 @@ export default function Navbar() {
       >
         {/*Clode button*/}
         <button
-          className="absolute top-5 right-5 text-white"
+          className="absolute top-5 right-5"
           onClick={() => setIsOpen(false)}
         >
           <FiX className="w-8 h-8" />

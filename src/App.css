@@ -10,3 +10,10 @@ html {
   display: none;
 }
 
+body {
+  margin: 0; /* xóa margin mặc định của trình duyệt */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
